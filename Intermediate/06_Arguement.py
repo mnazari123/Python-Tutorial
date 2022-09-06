@@ -3,8 +3,11 @@
 
 def add(*stuff):
     sum = 0;
+    print(stuff)
     stuff = list(stuff) # we convert it to list for bringing changes to argument
     stuff[0] = 0 # tuple objects are not changeable. for this we change them to list
+
+    print (stuff)
     for i in stuff:
         sum += i
     return sum 
